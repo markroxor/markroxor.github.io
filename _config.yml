@@ -4,8 +4,27 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://markroxor.github.io"
-baseurl: ""
+# Site settings
+title: "The Hive"
+bye_message: "--"
+baseurl: "/"
+url: "markroxor.github.io"
+disqus: markroxor
+
+# Header settings
+nick: "markroxor"
+name: "Mohit Rathore"
+mail:
+    domain: "markroxor"
+    ext: "in"
+source_code:
+    server: "github.com"
+    nick: "markroxor"
+blog:
+    server: "wordpress.com"
+    nick: "markroxor"
+#fingerprint_key: "5E12 9ABC C2A9 564B C048  2DF9 D327 0D10 BC71 CF75"
+
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
@@ -130,10 +149,12 @@ title-separator: "-"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+# Build settings
 markdown: kramdown
+permalink: /:categories/:title/
+
+timezone: Asia/Kolkata
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
 paginate: 5
 
 kramdown:
@@ -222,8 +243,7 @@ prose:
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
 
-plugins:
+plugins_dir:
   - jekyll-paginate
+gems: [jekyll-paginate]
 
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
