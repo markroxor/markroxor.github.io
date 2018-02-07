@@ -45,9 +45,8 @@ Now we propose the scheme of TF-IDF which simply put is a mathematical product o
 
 Now mathematically speaking -
 #### Term frequency  
-For a word (or term) `t`, the term frequency is denoted by ![tf](http://bit.ly/2BsXP2g)  and the frequency of each term in a document `d` is denoted by ![f](http://bit.ly/2Bt0DfL) then  
-
-![tf_eq](http://bit.ly/2BWvnHl)
+For a word (or term) `t`, the term frequency is denoted by <code>tf<sub>t,d</sub></code> and the frequency of each term in a document `d` is denoted by <code>f<sub>t,d</sub></code> then  
+<code>tf<sub>t,d</sub> = f<sub>t,d</sub></code>
 
 #### Inverse document frequency
 Taking the log `smartirs` scheme for inverse document frequency `idf` is calculated as   
@@ -56,8 +55,9 @@ or the log of inverse fraction of document that contain the term `t` , where `N`
 To avoid division by zero error generally 1 is added to the denominator.
 
 #### TF-idf
-Finally TF-IDF is calculated as the product of term frequency ![tf](http://bit.ly/2BsXP2g) and inverse document frequency ![idf](http://bit.ly/2BpWqK1)  
-![tfidf](/img/tfidf_eq.png)
+Finally TF-IDF is calculated as the product of term frequency <code>tf<sub>t,d</sub></code> and inverse document frequency  
+idf(t,D)  
+<code>tfidf(t,d,D) = tf<sub>t,d</sub> * idf<sub>t,D</sub></code>
 
 # 3. SMART Information Retrieval System  
 Taking a hint from wikipedia [\[1\]][1] - smart (System for the Mechanical Analysis and Retrieval of Text) information retrieval system or SMARTIRS in short is a mnemonic scheme for denoting tf-idf weighting variants in the vector space model which is a string of form TDN where T represents the term weighting for term frequency, D represents the term weighting for document frequency, and N represents the normalization scheme employed after the calculation of TF-IDF, The various place-holders that form the string are depicted in the figure -
