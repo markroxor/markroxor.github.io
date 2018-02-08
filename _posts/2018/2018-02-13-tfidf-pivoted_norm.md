@@ -9,6 +9,7 @@ tags:
     - Gensim's incubator programme
     - Machine Learning
 ---
+
 <!--
 # Table of contents:  
 ## 1. Introduction  
@@ -64,19 +65,29 @@ Taking a hint from wikipedia [\[1\]][1] - smart (System for the Mechanical Analy
  ![smartirs](/img/smartirs.png)
 
 ## 4. Pivoted document length normalisation  
+### 4.1 Approach
 It is proven that cosine normalization tends to favor retrieval of short documents but supresses the retrieval of long documents as can be seen in figure -
-![](/img/fig1.png)
-| :--: |  
-| *Space* |  
+<p align="center">
+<img src="/img/fig1.png" alt="Figure - 1">
+</p>
+<center> <b>Figure 1</b></center>
 
 Our goal is to somehow boost the probability of retrieving long documents and supress the probability of retrieval of short documents so that the probability of retrieval and relevence for a given document align. So our pivoted normalization scheme should be something like -
-![fig2](/img/fig2.png)
+<p align="center">
+<img src="/img/fig2.png" alt="Figure - 1">
+</p>
+<center> <b>Figure 2</b></center>
+
 The normalization factor should be high for short documents and low for long documents.
 (Remember that the graph is plotted for calculating the normalization factor. The higher the normalisation factor, lower is the TF-IDF value. More discussion on this in the later part.)
 
 This approach requires two parameters for the normalization to work
 * Pivot - Pivot is the point before which we consider a document to be short and after which the document is considered long. It can be found by plotting the retrieval and relevence curves of a set of documents using a general normalization function. The point where both these curves coincide is the pivot point.
-* Slope - The slope decides the amount of "tilting" at the pivot point which is required to bring the relevance and retrieval curves as close as possible. It is a hyper-parameter which must be manually tuned.
+* Slope - The slope decides the amount of "tilting" at the pivot point which is required to bring the relevance and retrieval curves as close as possible. Mathematically slope is the tan(the angle made by old normalization)
+
+Using basic coordinate geometry (which we are not going to discuss here) we can propose the new normalization scheme as  
+`pivoted normalization = (1.0 - slope) x pivot + slope x old normalization`
+
 
 ## 5. Comparitive study  
 
