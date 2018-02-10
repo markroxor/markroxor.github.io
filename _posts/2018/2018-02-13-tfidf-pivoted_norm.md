@@ -9,25 +9,25 @@ tags:
     - Gensim's incubator programme
     - Machine Learning
 ---
-# Table of contents:
-## 1. Introduction
-## 2. Term frequency-Inverse document frequency
-##   2.1. Introduction
-## 3. SMART Information Retrieval System
-##   3.1. The scheme
-## 4. Pivoted document length normalisation
-##   4.1. The scheme
-##   4.2. Implementation
-## 5. Comparitive study
-## 6. References
+# Table of contents:  
+## 1. Introduction  
+## 2. Term frequency-Inverse document frequency  
+##   2.1. Introduction  
+## 3. SMART Information Retrieval System  
+##   3.1. The scheme  
+## 4. Pivoted document length normalisation  
+##   4.1. The scheme  
+##   4.2. Implementation  
+## 5. Comparitive study  
+## 6. References  
 
 
-## 1. Introduction
+## 1. Introduction  
 As a part of gensim's incubator programme my goal was to add two new features on the existing `tfidf` model of gensim. One was implementing a
 smart information retrieval system (smartirs) scheme [1] and the other was implementing pivoted document length normalisation [2]. In this blog I will be discussing about the why and the what of the implementation and the take away will be a scrutinized inspection of the paper by Singhal, et al [2] on pivoted document length normalisation.
 
-## 2. Term frequency-Inverse document frequency
-#### Glossary of words -
+## 2. Term frequency-Inverse document frequency  
+#### Glossary of words -  
 Term Frequency is the number of times a word has occured in the document or a words frequency in a document. Its domanin remains local to the document.
 Document frequency is the number of times a word has occured in the whole corpus. Where corpus is a stack of multiple documents. Its domain is global.
 
@@ -44,10 +44,10 @@ Now we propose the scheme of TF-IDF which simply put is a mathematical product o
 Now mathematically speaking -  
 
 
-# 3. SMART Information Retrieval System
-## 3.1 The scheme
-Taking a hint from wikipedia [1] - smart information retrieval system or SMARTIRS in short is a mnemonic scheme for denoting tf-idf weighting variants in the vector space model which is a string of form TDN where T represents the term weighting for term frequency, D represents the term weighting for document frequency, and N represents the normalization scheme employed after the calculation of TF-IDF, The various place-holders that form the string are depicted in the figure - ![pic](/home/markroxor/Pictures/smartirs.png)
+# 3. SMART Information Retrieval System  
+## 3.1 The scheme  
+Taking a hint from wikipedia [1] - smart information retrieval system or SMARTIRS in short is a mnemonic scheme for denoting tf-idf weighting variants in the vector space model which is a string of form TDN where T represents the term weighting for term frequency, D represents the term weighting for document frequency, and N represents the normalization scheme employed after the calculation of TF-IDF, The various place-holders that form the string are depicted in the figure - ![pic](/img/smartirs.png)
 
-# 6. References
-[1] - https://en.wikipedia.org/wiki/SMART_Information_Retrieval_System
+# 6. References  
+[1] - https://en.wikipedia.org/wiki/SMART_Information_Retrieval_System \
 [2] - http://singhal.info/pivoted-dln.pdf
