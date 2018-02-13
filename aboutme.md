@@ -10,4 +10,4 @@ My name is Mohit Rathore. I have the following qualities:
 - I suffer existential crisis attack more than I should.
 
 ### my history
-My history goes as far as my [Github commits](www.github.com/markroxor) go.
+My history goes as far as my [Github commits](https://www.github.com/markroxor) go.
