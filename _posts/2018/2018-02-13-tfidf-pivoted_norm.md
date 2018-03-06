@@ -82,14 +82,35 @@ The normalization factor should be high for short documents and low for long doc
 (Remember that the graph is plotted for calculating the normalization factor. The higher the normalisation factor, lower is the TF-IDF value. More discussion on this in the later part.)
 
 This approach requires two parameters for the normalization to work
-* Pivot - Pivot is the point before which we consider a document to be short and after which the document is considered long. It can be found by plotting the retrieval and relevence curves of a set of documents using a general normalization function. The point where both these curves coincide is the pivot point.
-* Slope - The slope decides the amount of "tilting" at the pivot point which is required to bring the relevance and retrieval curves as close as possible. Mathematically slope is the tan(the angle made by old normalization)
+* Pivot - Pivot is the point before which we consider a document to be short and after which the document is considered long. It can be found by plotting the retrieval and relevence curves of a set of documents using a general normalization function. The point where both these curves coincide is the pivot point. Generally this point is close to the mean of old normalisation.
+* Slope - The slope decides the amount of "tilting" at the pivot point which is required to bring the relevance and retrieval curves as close as possible. Mathematically slope is the tan(the angle made by old normalization with the new normalisation)
 
 Using basic coordinate geometry (which we are not going to discuss here) we can propose the new normalization scheme as  
 `pivoted normalization = (1.0 - slope) x pivot + slope x old normalization`
 
 
-## 5. Comparitive study  
+## 5. Comparitive study
+I used the publically available [twenty-newsgroup dataset](http://qwone.com/~jason/20Newsgroups/) for comparing the traditional TFIDF methods with that of pivoted normalization.
+As it can be seen from figure 2. the old normalization coincides with the pivoted normalization when alpha is 45<sup>o</sup> or when slope is 1.
+
+| Slope | Model accuracy |
+|:-----:| --------------:|
+| 0.0   | 0.955932203390 |
+| 0.1   | 0.955932203390 |
+| col 2 is      | 0.2   | 0.959322033898 |
+| zebra stripes | 0.3   | 0.966101694915 |
+| zebra stripes | 0.4   | 0.969491525424 |
+| zebra stripes | 0.5   | 0.972881355932 |
+| zebra stripes | 0.6   | 0.972881355932 |
+| zebra stripes | 0.7   | 0.972881355932 |
+| zebra stripes | 0.8   | 0.972881355932 |
+| zebra stripes | 0.9   | 0.972881355932 |
+| 1.0   | 0.966101694915 |
+
+<p align="center">
+<img src="/img/line.gif" alt="Figure - 1">
+</p>
+<center> <b>Figure 1</b></center>
 
 # 6. References  
 \[1\] - https://en.wikipedia.org/wiki/SMART_Information_Retrieval_System  
