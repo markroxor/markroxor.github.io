@@ -18,8 +18,7 @@ tags:
 ## 3. SMART Information Retrieval System  
 ##   3.1. The scheme  
 ## 4. Pivoted document length normalization  
-##   4.1. The scheme  
-##   4.2. Implementation  
+##   4.1. The scheme
 ## 5. Comparative study  
 ## 6. References  
 -->
@@ -75,7 +74,7 @@ It is proven that cosine normalization tends to favor retrieval of short documen
 </p>
 <center> <b>Figure 1</b></center>
 
-Our goal is to somehow boost the probability of retrieving long documents and suppress the probability of retrieval of short documents so that the probability of retrieval and relevence for a given document align. So our pivoted normalization scheme should be something like -
+Our goal is to somehow boost the probability of retrieving long documents and suppress the probability of retrieval of short documents so that the probability of retrieval and relevance for a given document align. So our pivoted normalization scheme should be something like -
 <p align="center">
 <img src="/img/fig2.png" alt="Figure - 2">
 </p>
