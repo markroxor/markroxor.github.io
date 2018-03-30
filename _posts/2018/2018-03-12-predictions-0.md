@@ -20,7 +20,7 @@ begin to prepare an upcoming decision long before it
 enters awareness.
 
 The experiment which they conducted was as followed -
-![a](/home/mark/Documents/markroxor.github.io/img/experiment.png)
+![a](/img/experiment.png)
 
 Avoiding the detailed discussion on the paper, this study certainly proves upto some extent that free will is a mere illusion. Our behaviour, our actions are nothing but effect of [butterfly theory](https://en.wikipedia.org/wiki/Butterfly_effect) -
 > the details of a tornado (the exact time of formation, the exact path taken) being influenced by minor perturbations such as the flapping of the wings of a distant butterfly several weeks earlier.
