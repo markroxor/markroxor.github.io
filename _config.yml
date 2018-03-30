@@ -8,7 +8,7 @@
 title: "The Hive"
 bye_message: "--"
 baseurl: "/"
-url: "/"
+url: "markroxor.github.io"
 disqus: markroxor
 
 # Header settings
@@ -77,9 +77,9 @@ author:
   twitter: markroxor
   google-plus: +markroxor
   linkedin: markroxor
-  stackoverflow: yourlink
+  stackoverflow: markroxor
   instagram: markroxor
-  youtube: yourlink
+  youtube: markroxor
   spotify: markroxor
   steam: markroxor
 
