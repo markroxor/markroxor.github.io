@@ -2,7 +2,7 @@
 title:  "The foreseeable future: the Data and you"
 layout: post
 timezone: Asia/Kolkata
-date:   2018-03-12 22:08:00
+date:   2018-03-30 18:17:00
 categories:
     - blog
 tags:
