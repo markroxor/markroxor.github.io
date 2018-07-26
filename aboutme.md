@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: about
 title: About me
 subtitle: I try not to care.
 ---
