@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.bar-chart {
+    background-color: #C7D9D9;
+    }
+    
+.bar {
+     fill: #115D8C;
+     }
+
+     .more {
+        outline: none;
+        display: block;
+        width: 100%;
+        padding: 6px 0;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-bottom: 1px solid #aaa;
+        border-right: 1px solid #aaa;
+        background-color: #fff;
+        background-repeat: repeat-x;
+        background-position: left top;
+        font-size: 14px;
+        text-shadow: 1px 1px 1px #fff;
+        font-weight: bold;
+        height: 22px;
+        line-height: 1.5em;
+        margin-bottom: 6px;
+      }
+      
+      .more:hover {
+        border: 1px solid #bbb;
+        text-decoration: none;
+        background-position: left -78px;
+      }
+      
+      .more:active {
+        color: #666;
+        background-position: left -38px;
+      }
+      
+      .round {
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+      }
