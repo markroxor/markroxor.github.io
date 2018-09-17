@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v2.0.0
+* @link https://coreui.io
+* Copyright (c) 2018 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://coreui.io/license)
+-->
+
+<html lang="en">
+
+<head>
+  <base href="./">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+  <meta name="author" content="Łukasz Holeczek">
+  <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+  <title>CoreUI Free Bootstrap Admin Template</title>
+  <!-- Icons-->
+  <link href="vendors/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+  <link href="vendors/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+  <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="vendors/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <script type="text/javascript" src="/js/latexit.js"></script>
+  <!-- Main styles for this application-->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+
+</head>
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+
+  <div class="app-body">
+    <div class="sidebar">
+        <nav class="sidebar-nav">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="object-tracking.html">
+                <i class="nav-icon icon-calculator"></i> What is Object Tracking?
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="affine-transform.html">
+                <i class="nav-icon icon-calculator"></i> What is affine transform?
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="how-to-track.html">
+                <i class="nav-icon icon-calculator"></i> How do we track?
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="klt-drawbacks.html">
+                <i class="nav-icon icon-calculator"></i> Kanade Lucas Tomasi KLT tracker
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="klt-maths-derivation.html">
+                <i class="nav-icon icon-calculator"></i> KLT mathematical derivation
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="klt-drawbacks.html">
+                <i class="nav-icon icon-calculator"></i> Assumptions and Drawbacks of KLT
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="solution.html">
+                <i class="nav-icon icon-calculator"></i> Proposed solution(s)
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="references.html">
+                <i class="nav-icon icon-calculator"></i> References
+              </a>
+            </li>
+          </ul>
+        </nav>
+      <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+    </div>
+    <main class="main">
+      <div class="container-fluid">
+        <div class="animated fadeIn">
+          <div>
+              <p>The goal is to minimise the mean square error between the warped original image $I(W(x;p))$ and the template image $T$. </p>
+            <div lang='latex' style="text-align:center">
+                \sum_{x} \left[I(W(x;p + \triangle p)) - T(x)\right]^2
+            </div>
+            <p>First order taylor expansion </p>
+            <div lang='latex' style="text-align:center">
+                \sum_{x} \left[I(W(x;p)) + \triangledown I \frac{\partial W}{\partial p} \triangle p - T(x)\right]^2
+            </div>
+            <p>The error is minimised by making the first order derivative of the error as zero. </p>
+            <div lang='latex' style="text-align:center">
+                \sum_{x} \left[ \triangledown I \frac{\partial W}{\partial p} \right]^T \left[I(W(x;p)) + \triangledown I \frac{\partial W}{\partial p} \triangle p - T(x)\right] = 0
+            </div>
+            <p>Reshuffling .. </p>
+            <div lang='latex' style="text-align:center">
+                \triangle p = H^{-1}\sum_{x} \left[ \triangledown I \frac{\partial W}{\partial p} \right]^T \left[ T(x) - I(W(x;p))\right]
+            </div>
+            <p> Where</p>
+            <div lang='latex' style="text-align:center">
+                H = \left[\triangledown I \frac{\partial W}{\partial p} \right]^T \left[\triangledown I \frac{\partial W}{\partial p} \right]
+            </div>
+            <p> Pictorially - </p>
+            <div style="width:image width px; font-size:90%; text-align:center">
+                <img src = "/img/research/klt.png" alt = 'alt text'/>
+                <br/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!-- CoreUI and necessary plugins-->
+  <script src="vendors/jquery/js/jquery.min.js"></script>
+  <script src="vendors/popper.js/js/popper.min.js"></script>
+  <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendors/pace-progress/js/pace.min.js"></script>
+  <script src="vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
+  <script src="vendors/@coreui/coreui/js/coreui.min.js"></script>
+  <!-- Plugins and scripts required by this view-->
+  <script src="vendors/chart.js/js/Chart.min.js"></script>
+  <script src="vendors/@coreui/coreui-plugin-chartjs-custom-tooltips/js/custom-tooltips.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
