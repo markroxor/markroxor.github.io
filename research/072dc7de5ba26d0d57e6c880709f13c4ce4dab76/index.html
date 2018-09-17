@@ -5,7 +5,7 @@
         <script type="text/javascript" src="/js/latexit.js"></script>
         <script type="text/javascript">
             LatexIT.add('p',true);
-            </script>
+        </script>
         
         
         <script src="/js/d3.v4.min.js"></script>
@@ -14,12 +14,26 @@
     </head>
     <body>
         
-        <h1 style="text-align: center">Technical report</h1>
+        <h1 style="text-align: center">Deep ModelNets with Plug & Play Geometric Vision Modules</h1>
+        <h2 style="text-align: center">Mohit Rathore</h1>
         <!-- <svg class="bar-chart"></svg> -->
         
-        <a href="#" class="more btn" id="ot">What is object tracking?</a>
-        <div class='ot'>
-            <p>The general idea of object tracking is followed as - </p>
+        <a href="#" class="more btn" id="abstract">ABSTRACT</a>
+        <div class='abstract' style='text-align: left; left:0; right:0 ;margin-left:300; margin-right:300;'>
+            <p>With the advent of neural-network based object tracking techniques, geometrical approaches for object tracking have lost their grandeur. Though these neural-network based techniques suffer from an inherent problem of relying too much
+                on training data. These technniques go hay-wire in unknown environments where the geometrical approaches still prevail. This can be attributed to their
+                model agnostic behaviour. In this work we introduce a technique of coalescing these two approaches such that they overcome each other's drawbacks by using
+                deep modelnets with pluggable geometric vision modules. We show that this technique is more versatile and robust then the existing object tracking techniques.
+            </p>
+        </div>        
+
+        <a href="#" class="more btn" id="intro">1. INTRODUCTION</a>
+        <div class='intro' style='text-align: center; left:0; right:0 ;margin-left:80; margin-right:80;'>
+            <p>like <a href="#">KLT</a>,<a href="#">SFM/SLAM</a>,
+                depth/pose/EgoMotion estimation
+            </p>
+
+            <!-- <p>The general idea of object tracking is followed as - </p>
             <ul>
                 <li>In the first frame, we mark an set of points in which our object lies. These points bound the object we wish to track.</li>
                 <li>In subsequent frames it is expected that we will keep getting a new set of coordinates which will keep bounding the object.</li>
@@ -29,7 +43,54 @@
                     <br/>
                     Frame marking the object to be tracked.
                     Figure 1
-                </div>
+                </div> -->
+        </div>
+           
+        <a href="#" class="more btn" id="work">2. RELATED WORK</a>
+        <div class='work' style='text-align: center; left:0; right:0 ;margin-left:80; margin-right:80;'>
+            <p>like <a href="#">KLT</a>,<a href="#">SFM/SLAM</a>,
+                depth/pose/EgoMotion estimation
+            </p>
+
+        </div>
+
+        <a href="#" class="more btn" id="our">3. DEEP MODELNETS WITH PLUG & PLAY GEOMETRIC VISION MODULES</a>
+        <div class='our' style='left:0; right:0 ;margin-left:30; margin-right:50;'>
+            <p>With the advent of deep learning we can use neural networks to our aid.</p>
+            <ul>
+                <li>
+                    We can use neural networks at appropriate position in KLT, possibly right after calculating the gradient of the image so as to extract important features
+                    (which then act as a proxy for image gradients in KLT) that can account for the reliablity of the gradient and make the system more robust.
+                </li>
+                <li>
+                    There are techniques already present which make use of the various flavour of neural networks for object tracking, but these techniques are known to
+                    fail at instances because they go haywire in unknown environments (the environments which were not present in the training data.) 
+                </li>
+                <li>
+                    Our proposed solution aims to capture the best of both worlds making a more reliable and robust object tracking system.
+                </li>
+            </ul>
+            <div style="width:image width px; font-size:90%; text-align:center">
+                <img src = "/img/research/neural.jpg" style="width:40%; height:60%;"  alt = 'alt text'/>
+                <br/>
+            </div>    
+        </div>
+        <!-- http://www.eng.tau.ac.il/~oron/TWD/TWD.html -->
+        <a href="#" class="more btn" id="exp">4. EXPERIMENTS</a>
+        <div class='exp' style='text-align: center; left:0; right:0 ;margin-left:80; margin-right:80;'>
+            <p> We test our framework on a number of datasets. In section 4.1 we apply our technique on Vehicle View Point Dataset. 
+            </p>
+            <h2>4.1 Vehicle View Point Dataset</h2>
+            <p>The dataset has three different view points - RearCenter, PassengerSide and DriverSide in 166 scenarios with a total of 35414 frames.
+               The dataset is completely annotated.</p>
+            
+        </div>
+
+        <a href="#" class="more btn" id="conc">5. CONCLUSION</a>
+        <div class='conc' style='text-align: center; left:0; right:0 ;margin-left:80; margin-right:80;'>
+            <p>like <a href="#">KLT</a>,<a href="#">SFM/SLAM</a>,
+                depth/pose/EgoMotion estimation
+            </p>
         </div>
             
         <a href="#" class="more btn" id="affine">What is affine transform?</a>
@@ -205,6 +266,13 @@
                 </li>
                 <li>
                     <a href="http://lxu.me/projects/deepeaf/">Deep Edge-Aware Filters - <strong>Image credits</strong> </a>
+                </li>
+                <li>
+                    <a href="https://www.ri.cmu.edu/pub_files/pub3/chang_peng_2003_1/chang_peng_2003_1.pdf">ROBUST TRACKING AND STRUCTURE FROM MOTION WITH
+                        SAMPLING METHOD</a>
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping">Simultaneous localization and mapping</a>
                 </li>
                 
             </ul>
