@@ -27,8 +27,11 @@
   <script type="text/javascript" src="/js/latexit.js"></script>
   <!-- Main styles for this application-->
   <link href="css/style.css" rel="stylesheet">
+  <link href="/css/research.css" rel="stylesheet">
   <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
-
+  <script type="text/javascript">
+    LatexIT.add('p',true);
+</script>
 </head>
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
@@ -82,42 +85,33 @@
       <button class="sidebar-minimizer brand-minimizer" type="button"></button>
     </div>
     <main class="main">
-      <div class="container-fluid">
-        <div class="animated fadeIn">
-          <div>
-              <ul>
-                  <li>
-                      <a href="http://www.ncorr.com/download/publications/bakerunify.pdf">Lucas-Kanade 20 Years On: A Unifying Framework</a>
-                  </li>
-                  <li>
-                      <a href="http://web.yonsei.ac.kr/hgjung/Lectures/AUE859/8.%20Optical%20Flow,%20KLT%20feature%20tracker.pdf">Optical Flow,
-                          KLT Feature Tracker - HANYANG University</a>
-                  </li>
-                  <li>
-                      <a href="https://ags.cs.uni-kl.de/fileadmin/inf_ags/opt-ss15/OPT_SS2015_lec06.pdf">Computer Vision
-                          Object and People Tracking - Kaiserlautern University</a>
-                  </li>
-                  <li>
-                      <a href="http://lxu.me/projects/deepeaf/">Deep Edge-Aware Filters - <strong>Image credits</strong> </a>
-                  </li>
-
-              </ul>
-          </div>
+        <div class="container-fluid">
+            <div class="animated fadeIn">
+                <div class='issues' style='left:0; right:0 ;margin-left:30; margin-right:50;'>
+                    <h2>How?</h2>
+                    <ul>
+                        <li>
+                            We need to find the <i>affine transformed bounding box coordinates</i> and bring them to the domain of template image so as
+                            to calculate the IoU with the ground truth bounding box using the parameter values of the affine matrix we calculated.
+                            <i>Read Multiple View Geometry by Hartley and Zisserman?</i>
+                        </li>
+                    </ul>
         </div>
-      </div>
     </main>
-  </div>
-  <!-- CoreUI and necessary plugins-->
-  <script src="vendors/jquery/js/jquery.min.js"></script>
-  <script src="vendors/popper.js/js/popper.min.js"></script>
-  <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
-  <script src="vendors/pace-progress/js/pace.min.js"></script>
-  <script src="vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
-  <script src="vendors/@coreui/coreui/js/coreui.min.js"></script>
-  <!-- Plugins and scripts required by this view-->
-  <script src="vendors/chart.js/js/Chart.min.js"></script>
-  <script src="vendors/@coreui/coreui-plugin-chartjs-custom-tooltips/js/custom-tooltips.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
-</html>
+    </div>
+    <!-- CoreUI and necessary plugins-->
+    <script src="vendors/jquery/js/jquery.min.js"></script>
+    <script src="vendors/popper.js/js/popper.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendors/pace-progress/js/pace.min.js"></script>
+    <script src="vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
+    <script src="vendors/@coreui/coreui/js/coreui.min.js"></script>
+    <!-- Plugins and scripts required by this view-->
+    <script src="vendors/chart.js/js/Chart.min.js"></script>
+    <script src="vendors/@coreui/coreui-plugin-chartjs-custom-tooltips/js/custom-tooltips.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="/js/toggle_button.js"></script>
+  </body>
+  
+  </html>
+  

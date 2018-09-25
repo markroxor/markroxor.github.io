@@ -75,6 +75,11 @@
                 <i class="nav-icon icon-calculator"></i> References
               </a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="issues.html">
+                <i class="nav-icon icon-calculator"></i> Issues
+              </a>
+            </li>
           </ul>
         </nav>
       <button class="sidebar-minimizer brand-minimizer" type="button"></button>
@@ -198,6 +203,16 @@
                         <br/>
                         The masks corresponding to the warped input image and the template image.
                     </div>    
+                </div>
+
+                <a href="#" onClick="return false;" class="more btn" id="cav">Caveats.</a>
+                <div class='cav'>
+                    <ul>
+                      <li>
+                          The bounding boxes fed to KLT were resized to 48x64 using bilinear interpolation maintaining the aspect ratio WRT to the frame
+                          which had dimensions 480x640. So that we can use the calculated transformation matrix for calculating the IoU.
+                      </li>
+                    </ul>
                 </div>
         
                 <a href="#" onClick="return false;" class="more btn" id="klt_assumpt">Assumptions and Drawbacks of KLT</a>
