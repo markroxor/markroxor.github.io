@@ -118,6 +118,94 @@
                             IA / (A1 + A2 - IA) 
                         </li>
                     </ul>
+                    
+                    <h3> Discussion </h3>
+                    <ul>
+                        <li>
+                            To crop the image we need to round off the bounding box coordinates provided by the dataset for image at t=0 (only) and therefore we are using
+                            the same rounded off coordinates to get the location of template image at t=1. These coordinates are floating points. 
+                        </li>
+                        <li>
+                            Image should be resized to what size?
+                        </li>
+                    </ul>
+
+                    <h3> Results </h3>
+                    <h4>40x30 -> 100x100 </h4>
+                    <p>
+
+                        <strong>Vanilla</strong> <br>
+                        [[51 49] <br>
+                        [92 49] <br>
+                        [92 77] <br>
+                        [51 77] <br>
+                        [51 49]] <br><br>
+                        [[51.025517 50.03328 ] <br>
+                        [89.99989  50.036057] <br>
+                        [89.99995  77.93251 ] <br>
+                        [51.025574 77.92974 ] <br>
+                        [51.025517 50.03328 ]] <br><br>
+                        IoU - 0.8860759493670886 <br>
+                    </p>
+                        
+                    <p>
+                        
+                        <strong>Resized</strong> <br>
+                        [[51 49] <br>
+                        [92 49] <br>
+                        [92 77] <br>
+                        [51 77] <br>
+                        [51 49]] <br><br>
+                        [[51.211796 50.004272] <br>
+                        [89.99921  50.01212 ] <br>
+                        [90.00003  77.88183 ] <br>
+                        [51.21261  77.87398 ] <br>
+                        [51.211796 50.004272]] <br><br>
+                        IoU - 0.8849407783417935 <br>
+                    </p>
+
+                    <h4>400x300 -> 100x100 </h4>
+                    <p>
+                    <strong>Vanilla</strong> <br>
+                    [[ 51  49] <br>
+                    [452  49] <br>
+                    [452 346] <br>
+                    [ 51 346] <br>
+                    [ 51  49]] <br><br>
+                   [[ 51.002514  50.00556 ] <br>
+                    [450.        50.005974] <br>
+                    [450.       346.9902  ] <br>
+                    [ 51.002514 346.9898  ] <br>
+                    [ 51.002514  50.00556 ]] <br><br>
+
+                    IoU - 0.988350684564657 <br>
+                    </p>
+
+                    <p>
+                    <strong>Resized</strong> <br>
+                    [[ 51  49] <br>
+                    [452  49] <br>
+                    [452 346] <br>
+                    [ 51 346] <br>
+                    [ 51  49]] <br><br>
+                    [[ 54.03968   50.00008 ] <br>
+                    [449.99866   50.00099 ] <br>
+                    [449.9999   346.97025 ] <br>
+                    [ 54.040897 346.96933 ] <br>
+                    [ 54.03968   50.00008 ]] <br><br>
+
+                    IoU - 0.980934207112428 <br>
+                    </p>
+    
+                    <table style="margin: 0px auto;">
+                        <caption>Results</caption>
+                        <tr> <th>IoU</th> <th>Frames skipped</th></tr>
+                        <tr> <td>0.9639</td> <td align='center'>0</td> </tr>
+                        <tr> <td>0.9494</td> <td align='center'>1</td> </tr>
+                        <tr> <td>0.9304</td> <td align='center'>2</td> </tr>
+                    </table>
+
+
         </div>
     </main>
     </div>
