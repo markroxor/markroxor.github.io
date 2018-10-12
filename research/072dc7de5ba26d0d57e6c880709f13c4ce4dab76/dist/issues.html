@@ -89,7 +89,9 @@
             <div class="animated fadeIn">
                 <h1>Minutes of meetings</h1>
                 <div class='issues' style='left:0; right:0 ;margin-left:30; margin-right:50;'>
-                    <h2>03/10/18</h2>
+
+                <details>
+                    <summary>03/10/18</summary><br>
                     <ul>
                         <li>
                             Plot the bounding boxes by skipping 0, 1 and 2 frames. The translation between consequent frames should be less.
@@ -142,8 +144,49 @@
                         <tr> <td>0.9494</td> <td align='center'>1</td> </tr>
                         <tr> <td>0.9304</td> <td align='center'>2</td> </tr>
                     </table>
+                </details>
+                
 
+                <details>
+                    <summary>09/10/18</summary><br>
+                    <h4> Discussion -</h4>
+                    <ol>
+                        <li>
+                            KLT seem to work well even for images in which translation is high. We need to occulade/add noise to the image such that the iou of
+                            vanilla KLT comes down or skip past a few images.
+                        </li>
+                        <li>
+                            Try adding salt and pepper noise, gaussian noise, change the average illumination of the image to bring down the iou. 
+                        </li>
+                        <li>
+                            Plot the image gradients in between the frames.
+                        </li>
+                    </ol>                    
+                    <h4> Weekly update -</h4>
+                    <ol>
+                        <li>
+                            <img src = "/img/research/gradient_xy.png" alt = 'alt text'/><br>
+                            The gradients between two images.
+                        </li>
+                    </ol>
 
+                    <table style="margin: 0px auto;">
+                        <caption>Results</caption>
+                        <tr> <th align='center'>IoU (KLT)</th> <th align='center'>IoU (p=0)</th> <th align='center'>frames skipped</th> <th align='center'>&emsp;&emsp;&emsp;&emsp;&emsp;Noise</th></tr>
+                        <tr> <td align='center'>0.9024</td> <td align='center'>0.8313</td> <td align='center'>3</td> <td align='center'>90% intensity</td> </tr>
+                        <tr> <td align='center'>0.8813</td> <td align='center'>0.8313</td> <td align='center'>3</td> <td align='center'>Gaussian with variance 0.1</td> </tr>
+                        <tr> <td align='center'>0.9123</td> <td align='center'>0.8313</td> <td align='center'>3</td> <td align='center'>90% intensity</td> </tr>
+                    </table>
+                    <h4> To Discuss -</h4>
+                    <ol>
+                        <li>
+                            Tried applying learning layers right after calculating the image gradient, KLT didn't seem to converge (obvious).
+                        </li>
+                        <li>
+                            To get the predicted bounding box coordinates KLT must converge. So that the network can train.
+                        </li>
+                    </ol>
+                </details>
         </div>
     </main>
     </div>
