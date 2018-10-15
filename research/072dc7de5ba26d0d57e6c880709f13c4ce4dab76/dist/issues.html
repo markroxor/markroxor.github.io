@@ -171,19 +171,27 @@
                     </ol>
 
                     <table style="margin: 0px auto;">
-                        <caption>Results</caption>
+                        <caption ></caption>
                         <tr> <th align='center'>IoU (KLT)</th> <th align='center'>IoU (p=0)</th> <th align='center'>frames skipped</th> <th align='center'>&emsp;&emsp;&emsp;&emsp;&emsp;Noise</th></tr>
                         <tr> <td align='center'>0.9024</td> <td align='center'>0.8313</td> <td align='center'>3</td> <td align='center'>90% intensity</td> </tr>
                         <tr> <td align='center'>0.8813</td> <td align='center'>0.8313</td> <td align='center'>3</td> <td align='center'>Gaussian with variance 0.1</td> </tr>
-                        <tr> <td align='center'>0.9123</td> <td align='center'>0.8313</td> <td align='center'>3</td> <td align='center'>90% intensity</td> </tr>
+                    </table>
+
+                    <table style="margin: 0px auto;">
+                        <caption></caption>
+                        <tr> <th align='center'>IoU (KLT-LL)</th> <th align='center'>IoU (KLT)</th> <th align='center'>IoU (p=0)</th> <th align='center'>frames skipped</th> <th align='center'>&emsp;&emsp;&emsp;&emsp;&emsp;Noise</th></tr>
+                        <tr> <td align='center'>0.9192</td> <td align='center'>0.9024</td> <td align='center'>0.8313</td> <td align='center'>3</td> <td align='center'>90% intensity</td> </tr>
                     </table>
                     <h4> To Discuss -</h4>
                     <ol>
                         <li>
-                            Tried applying learning layers right after calculating the image gradient, KLT didn't seem to converge (obvious).
+                            The parameters were - BxHxW = 100x96x128 and learning rate was 0.01. The architecture consisted of one convolution layer with 1 - kernel of size
+                            - 3x3, stride - 1, padding - 1, no bias. The weight was - [[[[ 0.3914, -0.4452,  0.5939],
+                            [ 0.3917,  0.4521,  0.4722],
+                            [ 0.4602, -0.8766,  0.3565]]]]
                         </li>
                         <li>
-                            To get the predicted bounding box coordinates KLT must converge. So that the network can train.
+                            It is taking too long to train. 10 epochs took around a day to train. This can be attributed to complex iou calculations.
                         </li>
                     </ol>
                 </details>
