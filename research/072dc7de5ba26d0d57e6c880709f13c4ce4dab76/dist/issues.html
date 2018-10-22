@@ -167,7 +167,8 @@
                         <caption ></caption>
                         <tr> <th align='center'>IoU (KLT)</th> <th align='center'>IoU (p=0)</th> <th align='center'>frames skipped</th> <th align='center'>&emsp;&emsp;&emsp;&emsp;&emsp;Noise</th></tr>
                         <tr> <td align='center'>0.9024</td> <td align='center'>0.8313</td> <td align='center'>3</td> <td align='center'>90% intensity</td> </tr>
-                        </table>
+                        <!-- <tr> <td align='center'>0.8813</td> <td align='center'>0.8313</td> <td align='center'>3</td> <td align='center'>Gaussian with variance 0.1</td> </tr> -->
+                    </table>
 
                     <table style="margin: 0px auto;">
                         <caption></caption>
@@ -202,11 +203,34 @@
                         </li>
                     </ol>                    
                     <h4> Weekly update -</h4>
-                    <ol>
+                    Comments - Skipped 3 frames with 90%intensity, dataset had total pairs - 20803 (41606.0 frames).
+                    
+                    <table style="margin: 0px auto;">
+                        <caption></caption>
+                        <tr> <th align='center'>Method</th> <th align='center'>IoU</th> <th align='center'>&emsp;&emsp;Comments</th></tr>
+                        <tr> <th align='center'>no change</th><td align='center'>0.8313</td><td align='center'>-</td></tr>
+                        <tr> <th align='center'>KLT-Vanilla</th> <td align='center'>0.9024</td><td align='center'>-</td></tr>
+                        <tr> <th align='center'>KLT-LL</th> <td align='center'>0.9192</td><td align='center'>-</td></tr>
+                        <tr> <th align='center'>opentld</th> <td align='center'>0.9069</td><td align='center'>&emsp;2380 exceptions were raised.</td></tr>
+                        <tr> <th align='center'>cmt</th> <td align='center'>0.9381</td><td align='center'>3 exceptions were raised.</td></tr>
+                        <tr> <th align='center'>Siamese</th> <td align='center'>0.9650</td><td align='center'>-</td></tr>
+                    </table>
+
+                    <!-- <ol>
                         <li>
                             Code for all of them is ready, I am still reading about the three techniques. I should have some benchmarks by Tuesday.
                         </li>
-                    </ol>
+                        <li>
+                            opentld - tld mean iou over 18423 pairs is 0.9069, nan for exp  2380. Total pairs - 20803.
+                        </li>
+                        <li>
+                            cmt mean iou over 20800 pairs is 0.9381136814372545 exp  3
+                        </li>
+                        <li>
+                            -- Overall stats (averaged per frame) on 20803 videos (41606.0 frames) --
+                            -- Precision (20 px): 99.99 -- Precisions AUC: 47.64 -- IOU: 96.50 -- Speed: 7.35 --
+                        </li>
+                    </ol> -->
                 </details>
 
             </div>
