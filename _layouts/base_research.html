@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v2.0.0
+* @link https://coreui.io
+* Copyright (c) 2018 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://coreui.io/license)
+
+-->
+
+<html lang="en">
+  {% include head_research.html %}
+
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+  <div class="app-body">
+  {% include nav_research.html %}
+  {{ content }}
+  </div>
+
+  <!-- CoreUI and necessary plugins-->
+  <script src="/vendors/jquery/js/jquery.min.js"></script>
+  <script src="/vendors/popper.js/js/popper.min.js"></script>
+  <script src="/vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/vendors/pace-progress/js/pace.min.js"></script>
+  <script src="/vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
+  <script src="/vendors/@coreui/coreui/js/coreui.min.js"></script>
+  <!-- Plugins and scripts required by this view-->
+  <script src="/vendors/chart.js/js/Chart.min.js"></script>
+  <script src="/vendors/@coreui/coreui-plugin-chartjs-custom-tooltips/js/custom-tooltips.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/toggle_button.js"></script>
+</body>
+
+</html>
