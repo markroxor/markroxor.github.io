@@ -156,4 +156,30 @@ layout: base_research
                 </ol> -->
             </details>
 
+            <details>
+                <summary>23/10/18</summary><br>
+                <h4> Discussion -</h4>
+
+                <ol>
+                    <li>
+                        Benchmark the results on different dataset where Siamese FCN doesn't perform well.
+                    </li>
+                </ol>
+
+                <h4> Weekly update -</h4>
+
+                <ol>
+                    <li>
+                        Middlebury dataset are based on stereo vision and optical flow only.
+                    </li>
+                    <li>
+                        <!-- <img src = "/img/research/2005.gif" alt = 'alt text'/> -->
+                        <img src="/img/research/frame07.png"/>
+                        <img src="/img/research/frame09.png"/>
+                    </li>
+                </ol>
+
+
+            </details>
+
         </div>

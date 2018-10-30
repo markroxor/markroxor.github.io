@@ -229,3 +229,4 @@ prose:
 plugins_dir:
   - jekyll-paginate
 gems: [jekyll-paginate]
+exclude: [vendor]
