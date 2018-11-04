@@ -182,4 +182,41 @@ layout: base_research
 
             </details>
 
+            <details>
+                <summary>31/10/18</summary><br>
+                <h4> Discussion -</h4>
+
+                <ol>
+                    <li>
+                        Create a synthetic dataset manually by pasting image of a elephant in place of the car and testing out the accuracies of the single image.
+                    </li>
+                </ol>
+
+                <h4> Weekly update -</h4>
+
+                <ol>
+                    <li>
+                        Testing on a single image pair -
+                    </li>
+                    <li>
+                        <!-- <img src = "/img/research/2005.gif" alt = 'alt text'/> -->
+                        <img src="/img/research/img0000.png"/>
+                        <img src="/img/research/img0001.png"/>
+                    </li>
+                    <li>
+                        <table style="margin: 0px auto;">
+                            <caption></caption>
+                            <tr> <th align='center'>Method</th> <th align='center'>IoU</th> <th align='center'>&emsp;&emsp;Comments</th></tr>
+                            <tr> <th align='center'>no change</th><td align='center'>0.6627</td><td align='center'>-</td></tr>
+                            <tr> <th align='center'>opentld</th> <td align='center'>0.6749</td><td align='center'>-</td></tr>
+                            <tr> <th align='center'>cmt</th> <td align='center'>0.7320</td><td align='center'>-</td></tr>
+                            <tr> <th align='center'>KLT-Vanilla</th> <td align='center'>0.7404</td><td align='center'>-</td></tr>
+                            <tr> <th align='center'>KLT-LL</th> <td align='center'>0.7507</td><td align='center'>-</td></tr>
+                            <tr> <th align='center'>Siamese</th> <td align='center'>0.869850</td><td align='center'>As expected template matching still works well.</td></tr>
+                        </table>
+                    </li>
+                </ol>
+
+            </details>
+
         </div>
