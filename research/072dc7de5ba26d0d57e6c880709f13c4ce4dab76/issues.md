@@ -219,6 +219,22 @@ layout: base_research
                             <tr> <th align='center'>Siamese</th> <td align='center'>0.869850</td><td align='center'>As expected template matching still works well.</td></tr>
                         </table>
                     </li>
+                    <li>
+                        <img src="/img/research/img0000_tex.png"/>
+                        <img src="/img/research/img0001_tex.png"/>
+                    </li>
+                    <li>
+                        <table style="margin: 0px auto;">
+                            <caption></caption>
+                            <tr> <th align='center'>Method</th> <th align='center'>IoU</th> <th align='center'>&emsp;&emsp;Comments</th></tr>
+                            <tr> <th align='center'>no change</th><td align='center'>0.6627</td><td align='center'>-</td></tr>
+                            <tr> <th align='center'>opentld</th> <td align='center'>NA</td><td align='center'>It returned NA.</td></tr>
+                            <tr> <th align='center'>cmt</th> <td align='center'>0.9506</td><td align='center'>-</td></tr>
+                            <tr> <th align='center'>KLT-Vanilla</th> <td align='center'>0.6209</td><td align='center'>-</td></tr>
+                            <tr> <th align='center'>KLT-LL</th> <td align='center'>0.5632</td><td align='center'>-</td></tr>
+                            <tr> <th align='center'>Siamese</th> <td align='center'>0.9883</td><td align='center'>-</td></tr>
+                        </table>
+                    </li>
                 </ol>
 
             </details>
