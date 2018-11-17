@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "url": "https://github.com/markroxor/fromscratchtoml",
+      "title": "[RELEASE] fromscratchtoml - The machine learning library you really understand."
+    },
+
+    {
+      "url": "https://github.com/markroxor/elon",
+      "title": "[RELEASE] elon - Logs your daily routines."
+    },
+    {
+      "url": "https://github.com/markroxor/annihilator",
+      "title": "[WIP] annihilator - A commandline utility for pentesting for kali. "
+    },
+    {
+      "url": "https://github.com/markroxor/mrmark",
+      "title": "[RELEASE] mrmark - A personal assistant to manage your terminal based machines. "
+    },
+    {
+      "url": "https://github.com/brohrer/becca",
+      "title": "[UPDATE] Becca - Got opportunity to work with Dr. Brandon Rohrer on his idea of creating a general purpose learning agent using reinforcement learning."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "type": "job",
+      "date": "July '18 - ",
+      "description": {
+        "what": "Joined <a href='https://cvit.iiit.ac.in/'>CVIT Lab IIT Hyderabad</a> as a ",
+        "emphasis": "research fellow",
+        "info": "Working under Dr. CV Jawahar and Dr. Chetan Arora on object tracking using geometric approaches."
+      }
+    },
+    {
+      "type": "fun",
+      "date": "Dec '16 - June '18",
+      "description": {
+        "what": "Completed incubator program by ",
+        "emphasis": "<a href='https://rare-technologies.com/incubator/'>RaRe Technologies</a>",
+        "info": "Implemented pivoted document length normalization along with other code patches under the incubator program at gensim making me one of their top contributors."
+      }
+    },
+    {
+      "type": "job",
+      "date": "July '17 - July '18",
+      "description": {
+        "what": "Software Engineer at ",
+        "emphasis": "Melvault",
+        "info": "Worked for implementing a telegram chatbot for ICOs based on custom built intent/slot models and for attribute searching in surveillance videos using a classifier along with darknet/YOLOv3.!"
+      }
+    },
+    {
+      "type": "event",
+      "date": "July '13 -  May 17",
+      "description": {
+        "what": "Graduated from ",
+        "emphasis": "<a href='https://www.iitism.ac.in/'>IIT ISM Dhanbad </a>",
+        "info": "With BTech in Electronics And Communication"
+      }
+    },
+    {
+      "type": "job",
+      "date": "May '16 - June '16",
+      "description": {
+        "what": "Internship at ",
+        "emphasis": "<a href='http://www.atkinsglobal.com/en-gb'>WS Atkins Global</a>",
+        "info": "Worked on a data visualization tool in QGIS for the employees of Atkins."
+      }
+    },
+    {
+      "type": "job",
+      "date": "May '15 - Jun '15",
+      "description": {
+        "what": "Internship at ",
+        "emphasis": "<a href='https://www.nitt.edu/'>NIT Trichy</a>",
+        "info": "Worked with Dr. Deivalakshmi in image contrast enhancement using dynamic stochastic resonance."
+      }
+    }
+  ]
+}
