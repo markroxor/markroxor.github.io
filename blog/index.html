@@ -9,8 +9,8 @@ layout: default
       <div class="post">
         <a href="{{post.url}}" class="post-link">
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> <br><br>
-          <h3 class="h2 post-title">{{ post.title }}</h3>
-          <p class="post-summary">Tags - {% for tags in post.tags %}  {{tags}} {% endfor %}</p>
+          <h3 class="h3 post-title">{{ post.title }}</h3>
+          <p style="font-size:15px" class="post-summary">Tags : {% for tags in post.tags %}  <code>{{tags}} </code>{% endfor %}</p>
         </a>
       </div>
     {% endfor %}
