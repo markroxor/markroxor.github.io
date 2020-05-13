@@ -79,7 +79,7 @@ It is the probability distribution of a document that is returned by the model a
 It is the probability distribution of a document that is expected from the model against the document length of the documents. Refer figure 1.
 
 
-# 4. SMART Information Retrieval System  
+## 4. SMART Information Retrieval System  
 There exist multiple variants of how to weight the terms and document frequencies, using subtly different formulas. To make the notation scheme clearer, describes SMART (System for the Mechanical Analysis and Retrieval of Text, see Wikipedia [\[1\]][1]) information retrieval system, or SMARTIRS in short, defines a mnemonic scheme for denoting TF-IDF weighting variants in the vector space model. This notation is a 3-letter string of form TDN where T represents the term weighting for term frequency, D represents the term weighting for document frequency, and N represents the normalization scheme employed after the calculation of TF-IDF:
 
  ![smartirs](/img/smartirs.png)

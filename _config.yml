@@ -16,6 +16,7 @@ highlighter: rouge
 markdown: kramdown
 permalink: pretty
 paginate: 10
+future: true
 
 plugins: [jekyll-paginate]
 paginate_path: "/blog/page:num/"
