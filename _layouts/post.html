@@ -3,7 +3,9 @@ layout: no_css
 ---
 <div class="post-header mb2">
   <h2 class="py2">{{ page.title }}</h1>
-  <span class="meta">{{ page.date | date: "%b %-d, %Y" }}</span>
+  <span class="meta">{{ page.date | date: "%b %-d, %Y" }}<br><br></span>
+  <span class="meta"><i>{{ page.quote }}<br></i></span>
+  <span class="meta"><i> - {{ page.author}}</i></span>
 </div>
 
 <article class="post-content">
