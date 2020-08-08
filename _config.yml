@@ -27,3 +27,4 @@ exclude:
   - LICENSE
   - README.md
   - vendor
+  - schedule/node_modules

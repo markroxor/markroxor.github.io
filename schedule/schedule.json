@@ -1,0 +1,24 @@
+{
+    "projects": [
+        {
+            "name": "Learn ASM",
+            "description": "Check out various assembly codes and learn them. The milestone is going to be a program.",
+            "url": "https://github.com/markroxor/variable",
+            "days": [1,2,3,4,5,6,7],
+            "time": "4:30",
+            "channel": "https://twitch.tv/tsoding",
+            "starts": "2020-05-26",
+            "ends": "2020-06-30"
+        },
+        {
+            "name": "TOEFL",
+            "description": "Magoosh toefl prep",
+            "url": "Home",
+            "days": [1,2,3,4,5,6,7],
+            "time": "13:30",
+            "channel": "https://twitch.tv/tsoding",
+            "starts": "2020-06-01",
+            "ends": "2020-06-30"
+        }
+    ]
+}

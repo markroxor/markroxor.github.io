@@ -8,3 +8,5 @@ vendor/
 Thumbs.db
 ehthumbs.db
 temp/
+schedule/node_modules/
+schedule/ts/**/*.js

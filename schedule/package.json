@@ -1,0 +1,29 @@
+{
+  "name": "schedule",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "watchify -v -p tsify src/app.ts -o ./app.js",
+    "build": "browserify ./src/app.ts -p tsify --outfile ./app.js",
+    "build-prod": "browserify ./src/app.ts -p tsify -g uglifyify --outfile ./app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "@types/markdown-it": "0.0.7",
+    "@types/moment": "^2.13.0",
+    "@types/moment-timezone": "^0.5.6",
+    "browserify": "^16.2.2",
+    "markdown-it": "^8.4.2",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.20",
+    "sass": "^1.9.0",
+    "tsify": "^4.0.0",
+    "typescript": "^2.9.2",
+    "uglifyify": "^5.0.0",
+    "watchify": "^3.11.1"
+  }
+}
