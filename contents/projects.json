@@ -2,20 +2,47 @@
   "data": [
     {
       "url": "https://github.com/markroxor/fromscratchtoml",
-      "title": "[RELEASE] fromscratchtoml - The machine learning library you really understand."
+      "title": "[RELEASE] fromscratchtoml - The machine learning library you really understand. This library is my code base for storing code of popular machine learning algorithms from scratch while I understand them, keeping code-readability and simplicity over efficiency."
     },
-
+    {
+      "url": "https://github.com/markroxor/sneakey",
+      "title": "[WIP] sneakey - A commandline utility for pentesting."
+    },
+    {
+      "url": "https://github.com/markroxor/Packet-Analyzer",
+      "title": "[WIP] Packet-Analyzer This packet analyzer analyzes data sent over TCP, UDP and ICMP protocol and decipher various information about it."
+    },
+    {
+      "url": "https://github.com/markroxor/autopi",
+      "title": "[RELEASE] autopi - A Raspberry pi based iot home automation system."
+    },
     {
       "url": "https://github.com/markroxor/elon",
-      "title": "[RELEASE] elon - Logs your daily routines."
-    },
-    {
-      "url": "https://github.com/markroxor/annihilator",
-      "title": "[WIP] annihilator - A commandline utility for pentesting for kali. "
+      "title": "[RELEASE] elon - Log your daily routines stay productive."
     },
     {
       "url": "https://github.com/markroxor/mrmark",
-      "title": "[RELEASE] mrmark - A personal assistant to manage your terminal based machines. "
+      "title": "[RELEASE] mrmark - A personal customisable assistant integrated with Google assistant for controlling your machines remotely via voice commands, making it compatible with Google Home devices."
+    },
+    {
+      "url": "https://github.com/markroxor/Slimy",
+      "title": "[RELEASE] Slimy - A pygame based game like Nokia's snake xenzia coded in python."
+    },
+    {
+      "url": "https://github.com/markroxor/Tanks",
+      "title": "[RELEASE] Tanks -A pygame based game, just like Pocket Tanks"
+    },
+    {
+      "url": "https://github.com/markroxor/Rock-Paper-Scissor",
+      "title": "[RELEASE] ROCK-PAPER-SCISSOR"
+    },
+    {
+      "url": "https://github.com/markroxor/MineCraft-2D",
+      "title": "[RELEASE] MineCraft-2D The classical game of MineCraft. Now modded with ultra-low resolution. "
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=l3nIc8MK9Xg&t=1s",
+      "title": "[RELEASE] silVRsurfer - Connecting game engine with virtual reality using Arduino accelerometer input."
     },
     {
       "url": "https://github.com/brohrer/becca",
