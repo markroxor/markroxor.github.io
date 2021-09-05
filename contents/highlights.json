@@ -1,8 +1,26 @@
 {
   "data": [
     {
-      "type": "job",
-      "date": "July '18 - ",
+      "type": "Lead Software Engineer",
+      "date": "Jun '21 - ",
+      "description": {
+        "what": "Promoted to ",
+        "emphasis": "Lead Software Engineer",
+        "info": "Niveshi creates stock market strategies using reinforcement learning. I take care of machine learning ops, dev ops, dbms, code optimisation, parallelization etc. "
+      }
+    },
+    {
+      "type": "ML Ops Engineer",
+      "date": "Jan '19 - Jun '21",
+      "description": {
+        "what": "Joined <a href='https://niveshi.com/'>Niveshi</a> as a ",
+        "emphasis": "machine learning ops engineer",
+        "info": "Niveshi creates stock market strategies using reinforcement learning. I take care of machine learning ops, dev ops, dbms, code optimisation, parallelization etc. "
+      }
+    },
+    {
+      "type": "research intern",
+      "date": "July '18 - Dec '18",
       "description": {
         "what": "Joined <a href='https://cvit.iiit.ac.in/'>CVIT Lab IIT Hyderabad</a> as a ",
         "emphasis": "research fellow",
